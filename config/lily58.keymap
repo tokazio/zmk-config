@@ -10,6 +10,11 @@
 #include <dt-bindings/zmk/ext_power.h>
 
 / {
+
+    chosen {
+        zmk,battery = &vbatt;
+    };
+
 	keymap {
 		compatible = "zmk,keymap";
 
@@ -67,13 +72,11 @@
 			sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN>;
 		};
 	};
+};
 
-    chosen {
-        zmk,battery = &vbatt;
-    };
-
-    vbatt: vbatt {
-        compatible = "zmk,battery-nrf-vddh";
-        label = "VBATT";
-    };
+&fuel_gauge {
+    //compatible = "zmk,battery-nrf-vddh";
+    // Your battery capacity in mAh
+    design-capacity = <3000>;
+    //label = "VBATT";
 };
