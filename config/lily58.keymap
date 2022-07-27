@@ -37,7 +37,9 @@
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings
-                = <&macro_press &kp LCTRL &kp LALT>
+                = <&macro_tap &kp LCTRL &kp LALT>
+                , <&macro_pause_for_release>
+                , <&macro_release &kp LCTRL &kp LALT>
                 ;
         };
         shift_alt_up: shift_alt_up {
@@ -45,7 +47,7 @@
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings
-                = <&macro_press &kp LSHFT &kp LALT &kp UP>
+                = <&macro_tap &kp LSHFT &kp LALT &kp UP>
                 ;
         };
         shift_alt_down: shift_alt_down {
@@ -53,7 +55,7 @@
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings
-                = <&macro_press &kp LSHFT &kp LALT &kp DOWN>
+                = <&macro_tap &kp LSHFT &kp LALT &kp DOWN>
                 ;
         };
     };
