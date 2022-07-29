@@ -167,7 +167,7 @@
                     #binding-cells = <0>;
                     bindings
                         = <&macro_press &kp RSHIFT &kp RALT>
-                        , <&macro_tap &kp HYPHEN>
+                        , <&macro_tap &kp SQT>
                         , <&macro_release &kp RSHIFT &kp RALT>
                         ;
                 };
