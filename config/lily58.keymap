@@ -21,6 +21,7 @@
     };
 
     macros {
+
         ctrl_shift_f: ctrl_shift_f {
             label = "IJ find in files";
             compatible = "zmk,behavior-macro";
@@ -31,6 +32,7 @@
                 , <&macro_release &kp F &kp LSHFT &kp LCTRL>
                 ;
         };
+
         cmd_n: cmd_n {
             label = "IJ open class";
             compatible = "zmk,behavior-macro";
@@ -41,6 +43,7 @@
                 , <&macro_release &kp LCMD &kp N>
                 ;
         };
+
         shift_alt_up: shift_alt_up {
             label = "IJ move up";
             compatible = "zmk,behavior-macro";
@@ -51,6 +54,7 @@
                 , <&macro_release &kp LSHFT &kp LALT>
                 ;
         };
+
         shift_alt_down: shift_alt_down {
             label = "IJ move down";
             compatible = "zmk,behavior-macro";
@@ -61,60 +65,61 @@
                 , <&macro_release &kp LSHFT &kp LALT>
                 ;
         };
+
         shift_f6: shift_f6 {
-                    label = "IJ rename";
-                    compatible = "zmk,behavior-macro";
-                    #binding-cells = <0>;
-                    bindings
-                        = <&macro_press &kp LSHFT>
-                        , <&macro_tap &kp F6>
-                        , <&macro_release &kp LSHFT>
-                        ;
-                };
-                alt_cmd_m: alt_cmd_m {
-                            label = "IJ extract method";
-                            compatible = "zmk,behavior-macro";
-                            #binding-cells = <0>;
-                            bindings
-                                = <&macro_press &kp LCMD &kp LALT>
-                                , <&macro_tap &kp M>
-                                , <&macro_release &kp LCMD &kp LALT>
-                                ;
-                        };
+            label = "IJ rename";
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings
+                = <&macro_press &kp LSHFT>
+                , <&macro_tap &kp F6>
+                , <&macro_release &kp LSHFT>
+                ;
+        };
 
+        alt_cmd_m: alt_cmd_m {
+            label = "IJ extract method";
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings
+                = <&macro_press &kp LCMD &kp LALT>
+                , <&macro_tap &kp M>
+                , <&macro_release &kp LCMD &kp LALT>
+                ;
+        };
 
-                        alt_cmd_var: alt_cmd_var {
-                                                    label = "IJ extract variable";
-                                                    compatible = "zmk,behavior-macro";
-                                                    #binding-cells = <0>;
-                                                    bindings
-                                                        = <&macro_press &kp LCMD &kp LALT>
-                                                        , <&macro_tap &kp V>
-                                                        , <&macro_release &kp LCMD &kp LALT>
-                                                        ;
-                                                };
+        alt_cmd_v: alt_cmd_v {
+            label = "IJ extract variable";
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings
+                = <&macro_press &kp LCMD &kp LALT>
+                , <&macro_tap &kp V>
+                , <&macro_release &kp LCMD &kp LALT>
+                ;
+        };
 
-                        alt_cmd_f: alt_cmd_f {
-                                                    label = "IJ extract field";
-                                                    compatible = "zmk,behavior-macro";
-                                                    #binding-cells = <0>;
-                                                    bindings
-                                                        = <&macro_press &kp LCMD &kp LALT>
-                                                        , <&macro_tap &kp F>
-                                                        , <&macro_release &kp LCMD &kp LALT>
-                                                        ;
-                                                };
+        alt_cmd_f: alt_cmd_f {
+            label = "IJ extract field";
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings
+                = <&macro_press &kp LCMD &kp LALT>
+                , <&macro_tap &kp F>
+                , <&macro_release &kp LCMD &kp LALT>
+                ;
+        };
 
-                                                alt_cmd_c: alt_cmd_c {
-                                                                            label = "IJ extract const";
-                                                                            compatible = "zmk,behavior-macro";
-                                                                            #binding-cells = <0>;
-                                                                            bindings
-                                                                                = <&macro_press &kp LCMD &kp LALT>
-                                                                                , <&macro_tap &kp C>
-                                                                                , <&macro_release &kp LCMD &kp LALT>
-                                                                                ;
-                                                                        };
+        alt_cmd_c: alt_cmd_c {
+            label = "IJ extract const";
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings
+                = <&macro_press &kp LCMD &kp LALT>
+                , <&macro_tap &kp C>
+                , <&macro_release &kp LCMD &kp LALT>
+                ;
+        };
 
         macro_gt: macro_gt {
             label = "macro_gt";
@@ -126,15 +131,15 @@
                 , <&macro_release &kp LSHIFT>
                 ;
         };
-         macro_lt: macro_lt {
-                    label = "macro_lt";
-                    compatible = "zmk,behavior-macro";
-                    #binding-cells = <0>;
-                    bindings
-                        =
-                        <&macro_tap &kp GRAVE>
-                        ;
-                };
+
+        macro_lt: macro_lt {
+            label = "macro_lt";
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings
+                = <&macro_tap &kp GRAVE>
+                ;
+        };
     };
 
     behaviors {
