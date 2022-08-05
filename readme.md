@@ -5,9 +5,9 @@ https://github.com/tokazio/zmk-config
 WIP ZMK config for a Lily58 split kb on OSX in french layout with Intellij shortcuts
 
 ## Missing keys:
-_ -
-* $
-+ =
+_ - -> equal_sign -> EQUAL
+* $ -> close_bracket -> RBKT
++ = -> slash -> SLASH
 
 # ZMK doc
 
