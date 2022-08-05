@@ -184,6 +184,28 @@
                 , <&macro_release &kp RSHIFT &kp RALT>
                 ;
         };
+
+        CST_AT: CST_AT {
+            label = "CST_AT";
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings
+                = <&macro_press &kp LSHIFT>
+                , <&macro_tap &kp N2>
+                , <&macro_release &kp LSHIFT>
+                ;
+        };
+
+        CST_HASH: CST_HASH {
+            label = "CST_HASH";
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings
+                = <&macro_press &kp LSHIFT>
+                , <&macro_tap &kp N3>
+                , <&macro_release &kp LSHIFT>
+                ;
+        };
     };
 
     behaviors {
@@ -227,8 +249,8 @@
 // |       |     | x meth | x const | x var  | x field |        |  | del   | open class |       |       |  \   |   line up | line down |
 //                        |         |        |         |        |  |       |            | HOME  |  END  |
 			bindings = <
-&trans     &trans     &trans     &kp HASH   &kp BACKSLASH   &macro_cro_open                     &kp F6      &kp F7           &kp F8          &kp F9           &kp F10          &macro_cro_close
-&trans     &kp AT     &trans     &trans     &shift_f6       &trans                              &trans      &trans           &trans          &trans           &kp SLASH        &kp EQUAL
+&trans     &trans     &trans     &CST_HASH   &kp BACKSLASH   &macro_cro_open                     &kp F6      &kp F7           &kp F8          &kp F9           &kp F10          &macro_cro_close
+&trans     &CST_AT    &trans     &trans     &shift_f6       &trans                              &trans      &trans           &trans          &trans           &kp SLASH        &kp EQUAL
 &trans     &trans     &trans     &trans     &ctrl_shift_f   &trans                              &trans      &trans           &trans          &macro_pipe      &trans           &kp RBKT
 &trans     &trans     &alt_cmd_m &alt_cmd_c &alt_cmd_v      &alt_cmd_f       &trans   &kp DEL   &cmd_n      &trans           &trans          &macro_backslash &shift_alt_up    &shift_alt_down
                                  &trans     &trans          &trans           &trans   &trans    &trans      &kp HOME         &kp END
