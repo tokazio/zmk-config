@@ -2,13 +2,7 @@
 
 https://github.com/tokazio/zmk-config
 
-WIP ZMK config for a Lily58 split kb on OSX in french layout with Intellij shortcuts
-
-## Missing keys:
-_ - -> equal_sign -> EQUAL
-* $ -> close_bracket -> RBKT
-+ = -> slash -> SLASH -> non_us_backslash
-@ # -> 
+WIP ZMK config for a Lily58 split kb on OSX in french layout with some IntelliJ shortcuts
 
 # ZMK doc
 
@@ -20,7 +14,7 @@ https://github.com/tokazio/zmk-config/actions/runs/2724935505
 
 ## Best custom version build :
 
-https://github.com/tokazio/zmk-config/actions/runs/2760771645
+https://github.com/tokazio/zmk-config/actions/runs/2802431975
 
 ### Battery level:
 
