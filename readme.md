@@ -7,7 +7,8 @@ WIP ZMK config for a Lily58 split kb on OSX in french layout with Intellij short
 ## Missing keys:
 _ - -> equal_sign -> EQUAL
 * $ -> close_bracket -> RBKT
-+ = -> slash -> SLASH
++ = -> slash -> SLASH -> non_us_backslash
+@ # -> 
 
 # ZMK doc
 
