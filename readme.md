@@ -7,6 +7,7 @@ WIP ZMK config for a Lily58 split kb on OSX in french layout with some IntelliJ 
 # ZMK doc
 
 https://zmk.dev/docs/customization
+https://zmk.dev/docs/codes
 
 ## default version build :
 
