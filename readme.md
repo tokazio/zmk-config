@@ -4,6 +4,9 @@ https://github.com/tokazio/zmk-config
 
 WIP ZMK config for a Lily58 split kb on OSX in french layout with some IntelliJ shortcuts
 
+
+exo https://agilefingers.com/fr/textes/verne-jules-voyages-au-centre-de-la-terre-fr/sommaire
+
 # ZMK doc
 
 https://zmk.dev/docs/customization
