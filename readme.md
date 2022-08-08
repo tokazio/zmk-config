@@ -22,6 +22,6 @@ https://github.com/tokazio/zmk-config/actions/runs/2802431975
 
 ### Battery level:
 
-No % battery on osx
+No % battery on osx before monterey
 
 https://zmk.dev/docs/features/battery
