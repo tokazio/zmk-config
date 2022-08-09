@@ -254,7 +254,7 @@
 &trans     &CST_AT    &trans     &trans     &shift_f6       &trans                                    &trans      &trans           &trans          &trans           &kp SLASH        &kp EQUAL
 &trans     &trans     &trans     &trans     &ctrl_shift_f   &trans                                    &trans      &trans           &trans          &macro_pipe      &trans           &kp RBKT
 &trans     &trans     &alt_cmd_m &alt_cmd_c &alt_cmd_v      &alt_cmd_f       &bt BT_CLR     &kp DEL   &cmd_n      &trans           &trans          &macro_backslash &shift_alt_up    &shift_alt_down
-                                 &trans     &trans          &trans           &bt BT_SEL 3   &trans    &trans      &kp HOME         &kp END
+                                 &trans     &trans          &trans           &bt BT_NEXT    &trans    &trans      &kp HOME         &kp END
 			>;
 
 			sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN>;
