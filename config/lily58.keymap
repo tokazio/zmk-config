@@ -284,7 +284,7 @@
         &macro_gt  &trans     &trans     &trans   &trans          &trans                             &trans      &trans           &trans          &trans    &trans           &trans
         &trans     &trans     &trans     &trans   &trans          &trans                             &trans      &trans           &trans          &trans    &trans           &trans
         &trans     &trans     &trans     &trans   &trans          &trans    &trans         &macro_lt &trans      &trans           &trans          &trans    &trans           &trans
-                                         &trans   &trans          &trans    &trans         &trans    &trans      &trans           &trans
+                                         &trans   &trans          &trans    &bt BT_SEL 2   &trans    &trans      &trans           &trans
                     >;
 
                     sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN>;
