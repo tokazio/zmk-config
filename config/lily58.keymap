@@ -10,11 +10,6 @@
 #include <dt-bindings/zmk/ext_power.h>
 
 
-#define BASE 0
-#define LOWER 1
-#define RAISE 2
-#define ADJUST 3
-
 / {
 
     chosen {
@@ -26,14 +21,7 @@
         label = "VBATT";
     };
     
-    // Activate ADJUST layer by pressing raise and lower
-    conditional_layers {
-        compatible = "zmk,conditional-layers";
-        adjust_layer {
-            if-layers = <LOWER RAISE>;
-            then-layer = <ADJUST>;
-        };
-    };
+
     
     macros {
 
@@ -262,11 +250,11 @@
 // |       |     | x meth | x const | x var  | x field |        |  | del   | open class |       |       |  \   |   line up | line down |
 //                        |         |        |         |        |  |       |            | HOME  |  END  |
 			bindings = <
-&trans     &trans     &trans     &CST_HASH   &kp BACKSLASH   &macro_cro_open                     &kp F6      &kp F7           &kp F8          &kp F9           &kp F10          &macro_cro_close
-&trans     &CST_AT    &trans     &trans     &shift_f6       &trans                              &trans      &trans           &trans          &trans           &kp SLASH        &kp EQUAL
-&trans     &trans     &trans     &trans     &ctrl_shift_f   &trans                              &trans      &trans           &trans          &macro_pipe      &trans           &kp RBKT
-&trans     &trans     &alt_cmd_m &alt_cmd_c &alt_cmd_v      &alt_cmd_f       &bt BT_CLR   &kp DEL   &cmd_n      &trans           &trans          &macro_backslash &shift_alt_up    &shift_alt_down
-                                 &trans     &trans          &trans           &bt BT_SEL 2   &trans    &trans      &kp HOME         &kp END
+&trans     &trans     &trans     &CST_HASH   &kp BACKSLASH   &macro_cro_open                          &kp F6      &kp F7           &kp F8          &kp F9           &kp F10          &macro_cro_close
+&trans     &CST_AT    &trans     &trans     &shift_f6       &trans                                    &trans      &trans           &trans          &trans           &kp SLASH        &kp EQUAL
+&trans     &trans     &trans     &trans     &ctrl_shift_f   &trans                                    &trans      &trans           &trans          &macro_pipe      &trans           &kp RBKT
+&trans     &trans     &alt_cmd_m &alt_cmd_c &alt_cmd_v      &alt_cmd_f       &bt BT_CLR     &kp DEL   &cmd_n      &trans           &trans          &macro_backslash &shift_alt_up    &shift_alt_down
+                                 &trans     &trans          &trans           &bt BT_SEL 3   &trans    &trans      &kp HOME         &kp END
 			>;
 
 			sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN>;
@@ -298,15 +286,15 @@
 // |      |       |       |       |       |       |RGB_TOG| |      |      |      |       |      |       |       |
 //                |       |       |       |       |       | |      |      |      |       |      |
 
-        Adjust_layer {
-        bindings = <
-&bt BT_CLR                      &bt BT_SEL 0    &bt BT_SEL 1    &bt BT_SEL 2    &bt BT_SEL 3    &bt BT_SEL 4                                    &none &none &none &none &none &none
-&none                           &none           &none           &none           &none           &none               &none            &none      &none &none &none &none
-&none                           &none           &none           &none           &none           &none                                           &none &none &none &none &none &none
-&none                           &none           &none           &none           &none           &none               &none            &none      &none &none &none &none &none &none
-                                                &none           &none           &none           &none               &none            &none      &none &none &none &none
-        >;
-        };
+//        Adjust_layer {
+//        bindings = <
+//&bt BT_CLR                      &bt BT_SEL 0    &bt BT_SEL 1    &bt BT_SEL 2    &bt BT_SEL 3    &bt BT_SEL 4                                    &none &none &none &none &none &none
+//&none                           &none           &none           &none           &none           &none               &none            &none      &none &none &none &none
+//&none                           &none           &none           &none           &none           &none                                           &none &none &none &none &none &none
+//&none                           &none           &none           &none           &none           &none               &none            &none      &none &none &none &none &none &none
+//                                                &none           &none           &none           &none               &none            &none      &none &none &none &none
+//        >;
+//        };
 
 
 	};
