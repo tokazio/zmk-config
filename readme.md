@@ -29,3 +29,12 @@ https://zmk.dev/docs/features/battery
 ### display:
 
 ssd1306 i own are not working
+
+
+Discord for help:
+
+https://discord.com/channels/719497620560543766/719909884769992755
+
+# FULL reset
+
+Reset the flash by putting the uf2 file made for this.
