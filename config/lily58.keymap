@@ -266,10 +266,10 @@
 
 		lower_layer {
 // ------------------------------------------------------------------------------------------------------------
-// |       |     |        |   #     |  `     |  [          |                   |  F6        |  F7   |  F8   |   F9 |  F10      |  ]        |
-// |       | @   |        |         | rename |             |                   |            |       |       |      | = et +    | - et _    |
-// |       |     |        |         |  find  | multi caret |                   |            |       |       |  "|" |           | $ et *    |
-// |       |     | x meth | x const | x var  | x field     |        |  | del   | open class |       |       |  \   |   line up | line down |
+// |       |     |        |   #     |  `     |  [          |                   |  F6        |  F7   |  F8   |   F9.       |  F10      |  ]        |
+// |       | @   |        |         | rename |             |                   |            |       |       | format code | = et +    | - et _    |
+// |       |     |        |         |  find  | multi caret |                   |            |       |       |  "|"        | x meth    | $ et *    |
+// |       |     | x meth | x const | x var  | x field     |        |  | del   | open class |       |       |  \          |   line up | line down |
 //                        |         |        |             |        |  |       |            | HOME  |  END  |
 			bindings = <
 &trans      &trans     &trans     &CST_HASH   &kp BACKSLASH   &macro_cro_open                         &kp F6      &kp F7           &kp F8          &kp F9           &kp F10          &macro_cro_close
